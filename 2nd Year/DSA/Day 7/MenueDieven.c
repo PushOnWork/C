@@ -25,7 +25,7 @@ void dequeue(){
     if(front>rear)
         front=rear=-1;
 }
-void display(){
+void QueueDisplay(){
     if(front==-1)
         printf("Queue is empty\n");
     else{
@@ -77,7 +77,7 @@ int peek()
     else
         return items[top];
 }
-void display()
+void StackDisplay()
 {
     if(isEmpty())
         printf("Stack is empty\n");
@@ -110,7 +110,7 @@ int main(){
                         printf("Top element is: %d\n",peek());
                         break;
                     case 4:
-                        display();
+                        StackDisplay();
                         break;
                     default:
                         printf("Invalid choice\n");
@@ -133,7 +133,7 @@ int main(){
                         dequeue();
                         break;
                     case 3:
-                        display();
+                        QueueDisplay();
                         break;
                     default:
                         printf("Invalid choice\n");
